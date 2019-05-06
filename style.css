@@ -1,0 +1,276 @@
+/*kolory
+czerwony B21214 rgb(178, 18, 20)
+zolty F5F100 rgb(245, 241, 0)
+intensywny czerwony FF0004  
+jasnoniebieski 1487CC rgb(20, 135, 204)
+niebieski 0972B2 rgb(9, 114, 178)
+*/
+
+html {
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/tlo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 1024px;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*NAGŁÓWEK*/
+header img {
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  left: 2rem;
+  width: 120px;
+  height: 120px;
+}
+
+/*KONTAKT*/
+aside {
+  position: relative;
+  padding: 0 26rem 0 24rem;
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url(img/laweta.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: left 100% top 1rem;
+  animation-name: drive;
+  animation-duration: 4s;
+}
+
+div.contact {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.contact p {
+  float: left;
+  padding: 1rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.contact p:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: #B21214;
+  color: #F5F100;
+}
+
+.contact p:last-child {
+  padding-left: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #F5F100;
+  background-image: url(img/telefon.png);
+  background-repeat: no-repeat;
+  background-position: 0.4rem center;
+  color: #B21214;
+}
+
+/*NAWIGACJA*/
+nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1.5rem 0 1.5rem 24rem;
+}
+
+nav li {
+  float: left;
+  display: block;
+  width: 20%;
+  min-width: 24rem;
+  padding-right: 3rem;
+  list-style: none;
+}
+
+nav li a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid white;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav li a:hover {
+  border: 1px solid #F5F100;
+  color: #F5F100;
+  background-color: black;
+}
+
+nav li a.current {
+  border: 1px solid #F5F100;
+  color: #F5F100;
+  background-color: black;
+}
+
+nav li i {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+/*GŁÓWNA ZAWARTOŚĆ STR 1*/
+
+.main {
+  width: 1024px;
+  height: 100vh;
+  padding: 0 3rem;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  animation-name: show;
+  animation-duration: 2s;
+}
+
+article > div {
+  float: left;
+  position: relative;
+  width: 33.33%;
+  padding: 0 1.5rem;
+}
+
+article img.foto {
+  width: 290px;
+  height: 210px;
+  margin-top: 1.5rem;
+}
+
+.main h1 {
+  padding: 3rem 0 2rem 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.main h2 {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  color: #B21214;
+}
+
+.main p {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.main ul {
+  margin-left: 3rem;
+}
+
+/*PODSTRONA 2*/
+.wrench {
+  width: 72px;
+  height: 58px;
+  margin: -0.5rem 0;
+}
+
+.tire {
+  position: absolute;
+  right: 6rem;
+  bottom: 0;
+  width: 95px;
+  height: 155px;
+}
+
+/*PODSTRONA 3*/
+.map > div {
+  width: 25%;
+}
+
+.map .center_part img {
+  margin-top: 1rem;
+  width: 190px;
+  height: 177px;
+}
+
+.map .right_part {
+  width: 50%;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.map ul {
+  margin: 0;
+  list-style: none;
+}
+
+
+/*STOPKA*/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1366px;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 1.2rem;
+  color: #F5F100;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  padding: 1.5rem 1rem;
+  list-style: none;
+}
+
+
+/*ANIMACJE*/
+@keyframes drive {
+  0% {
+    background-position: left 0 top 1rem;
+  }
+
+  100% {
+    background-position: left 100% top 1rem;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+
+    transform: rotate(90deg) scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
