@@ -13,7 +13,8 @@ html {
   background-color: black;
 }
 
-.background {
+
+#background {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -22,9 +23,8 @@ html {
   background-size: cover;
 }
 
-.wrapper {
+#wrapper {
   position: relative;
-  min-width: 1024px;
   max-width: 1366px;
   margin: 0 auto;
 }
@@ -45,80 +45,79 @@ html {
 header img {
   position: absolute;
   z-index: 2;
-  top: 1rem;
-  left: 2rem;
-  width: 120px;
-  height: 120px;
+  top: 10px;
+  left: 15px;
+  width: 130px;
 }
 
 /*KONTAKT*/
 aside {
   position: relative;
-  padding: 0 26rem 0 24rem;
-  height: 6rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding-right: 260px;
+  padding-left: 200px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, .5);
   background-image: url(img/laweta.png);
   background-repeat: no-repeat;
   background-origin: content-box;
-  background-position: left 100% top 1rem;
+  background-position: left 100% top 20px;
   animation-name: drive;
   animation-duration: 4s;
 }
 
-div.contact {
+div#phone {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 15px;
+  right: 15px;
 }
 
-.contact p {
+div#phone p {
   float: left;
-  padding: 1rem;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
 }
 
-.contact p:first-child {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+div#phone p:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: #B21214;
   color: #F5F100;
 }
 
-.contact p:last-child {
-  padding-left: 4rem;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+div#phone p:last-child {
+  padding-left: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #F5F100;
   background-image: url(img/telefon.png);
   background-repeat: no-repeat;
-  background-position: 0.4rem center;
+  background-position: 4px center;
   color: #B21214;
 }
 
 /*NAWIGACJA*/
 nav {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 1.5rem 0 1.5rem 24rem;
+  background-color: rgba(0, 0, 0, .9);
+  padding: 15px 0 15px 200px;
 }
 
 nav li {
   float: left;
   display: block;
   width: 20%;
-  min-width: 24rem;
-  padding-right: 3rem;
+  min-width: 200px;
+  padding-right: 2%;
   list-style: none;
 }
 
 nav li a {
   display: block;
-  padding: 1rem;
+  padding: 10px;
   border: 1px solid white;
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 700;
   color: white;
   text-decoration: none;
@@ -132,134 +131,256 @@ nav li a:hover {
   background-color: black;
 }
 
-nav li a.current {
+nav li a#current {
   border: 1px solid #F5F100;
   color: #F5F100;
   background-color: black;
 }
 
 nav li i {
-  font-size: 1.8rem;
-  margin-right: 1rem;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
 /*GŁÓWNA ZAWARTOŚĆ STR 1*/
 
-.main {
-  width: 1024px;
-  height: 100vh;
-  padding: 0 3rem;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
+div#content {
+  max-width: 1024px;
+  padding-bottom: 100px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   color: black;
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.6;
   animation-name: show;
   animation-duration: 2s;
 }
 
-article > div {
-  float: left;
+article {
+  display: flex;
+  justify-content: space-between;
+}
+
+article > div.column {
   position: relative;
-  width: 33.33%;
-  padding: 0 1.5rem;
+  padding: 20px 20px 20px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-article img.foto {
-  width: 290px;
-  height: 210px;
-  margin-top: 1.5rem;
+article#about-us > div.column,
+article#offer > div.column {
+  width: calc(100% / 3 - 10px);
 }
 
-.main h1 {
-  padding: 3rem 0 2rem 1.5rem;
-  font-size: 3rem;
+
+article#about-us img {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+#content h1 {
+  padding: 20px 0;
+  font-size: 40px;
+  letter-spacing: 10px;
+  color: white;
+  text-shadow: 4px 4px 4px black,
+    2px 2px 0 black;
   font-weight: 700;
-}
-
-.main h2 {
-  margin: 1rem 0;
-  font-size: 1.8rem;
-  color: #B21214;
-}
-
-.main p {
-  margin: 1rem 0;
-  line-height: 1.6;
-}
-
-.main ul {
-  margin-left: 3rem;
-}
-
-/*PODSTRONA 2*/
-.wrench {
-  width: 72px;
-  height: 58px;
-  margin: -0.5rem 0;
-}
-
-.tire {
-  position: absolute;
-  right: 6rem;
-  bottom: 0;
-  width: 95px;
-  height: 155px;
-}
-
-/*PODSTRONA 3*/
-.map > div {
-  width: 25%;
-}
-
-.map .center_part img {
-  margin-top: 1rem;
-  width: 190px;
-  height: 177px;
-}
-
-.map .right_part {
-  width: 50%;
-  padding-top: 1rem;
   text-align: center;
 }
 
-.map ul {
+#content h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #B21214;
+}
+
+#content p {
+  margin: 10px 0;
+}
+
+#content ul {
+  margin-left: 30px;
+}
+
+/*PODSTRONA 2*/
+#wrench {
+  margin-top: 20px;
+  max-width: 30%;
+}
+
+#tire {
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+  width: 30%;
+}
+
+/*PODSTRONA 3*/
+article#contact > div.column {
+  width: calc(25% - 10px);
+  min-width: 230px;
+}
+
+article#contact img {
+  margin-top: 10px;
+  width: 100%;
+}
+
+article#contact > div.column:last-child {
+  width: calc(50% - 10px);
+  padding-top: 20px;
+}
+
+article#contact ul {
   margin: 0;
   list-style: none;
 }
 
-
 /*STOPKA*/
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  min-width: 1024px;
-  max-width: 1366px;
   background-color: rgba(0, 0, 0, 0.9);
-  font-size: 1.2rem;
-  color: #F5F100;
+  font-size: 12px;
+  color: white;
   text-align: center;
 }
 
 footer li {
   display: inline-block;
-  padding: 1.5rem 1rem;
+  padding: 15px 10px;
   list-style: none;
 }
 
+/*RWD*/
+/* > 1366px*/
+@media (min-width: 1366px) {
+  #background {
+    width: 1366px;
+    top: 0;
+    left: calc((100% - 1366px) / 2);
+  }
+}
+
+/* < 900px */
+@media (max-width: 900px) {
+  aside {
+    display: none;
+  }
+
+  nav::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  nav ul {
+    float: right;
+    margin-right: 15px;
+  }
+
+  nav li {
+    float: none;
+    min-width: 180px;
+  }
+
+  article#about-us,
+  article#offer {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  article#about-us > div.column,
+  article#offer > div.column {
+    min-width: 350px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  article > div.column {
+    margin-bottom: 20px;
+  }
+
+  #content h1 {
+    font-size: 32px;
+    letter-spacing: 8px;
+  }
+
+  /*  PODSTRONA 3*/
+  article#contact {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  article#contact > div.column {
+    width: cacl(50% - 20px);
+    min-width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  article#contact > div.column:last-child {
+    width: 100%;
+    max-width: 520px;
+    min-width: 400px;
+    min-height: 350px;
+  }
+
+}
+
+/*RWD < 400px*/
+
+@media (max-width: 400px) {
+  header img {
+    width: 100px;
+  }
+
+  nav li {
+    min-width: 160px;
+  }
+
+  article#about-us > div.column,
+  article#offer > div.column {
+    min-width: 320px;
+  }
+
+  #content h1 {
+    font-size: 24px;
+    letter-spacing: 6px;
+  }
+
+  /*  PODSTRONA 3*/
+  article#contact {
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  article#contact > div.column {
+    min-width: 320px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  article#contact > div.column:last-child {
+    min-width: 320px;
+    min-height: 200px;
+  }
+}
 
 /*ANIMACJE*/
+
 @keyframes drive {
   0% {
-    background-position: left 0 top 1rem;
+    background-position: left 0 top 20px;
   }
 
   100% {
-    background-position: left 100% top 1rem;
+    background-position: left 100% top 20px;
   }
 }
 
