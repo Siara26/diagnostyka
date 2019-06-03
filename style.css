@@ -290,7 +290,7 @@ footer li {
   article#offer {
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
   }
 
   article#about-us > div.column,
