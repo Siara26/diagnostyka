@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="stacja diagnostyczna Solo Auto Center w Sandomierzu">
+  <meta name="author" content="Michał Sieradzki">
+  <meta name="keywords" content="stacja diagnostyczna, badania techniczne pojazdów, pomoc drogowa, holowanie, laweta, serwis samochodowy">
   <title>Solo Auto Center</title>
   <link rel="shortcut icon" href="favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
@@ -11,15 +15,15 @@
 </head>
 
 <body>
-  <div class="background"></div>
-  <div class="wrapper">
+  <div id="background"></div>
+  <div id="wrapper">
     <header>
       <a href="index.html">
         <img src="img/logo_solo.png" alt="logo stacji diagnostycznej- Solo Auto Center">
       </a>
     </header>
     <aside class="clearfix">
-      <div class="contact clearfix">
+      <div id="phone" class="clearfix">
         <p>24/7</p>
         <p>(+48) 533 336 655</p>
       </div>
@@ -28,13 +32,13 @@
       <ul class="clearfix">
         <li><a href="index.html"><i class="fas fa-home"></i>O nas</a></li>
         <li><a href="offer.html"><i class="fas fa-wrench"></i>Oferta</a></li>
-        <li><a href="contact.html" class="current"><i class="fas fa-address-book"></i>Kontakt</a></li>
+        <li><a href="contact.html" id="current"><i class="fas fa-address-book"></i>Kontakt</a></li>
       </ul>
     </nav>
-    <section class="main">
+    <div id="content">
       <h1>Solo Auto Center</h1>
-      <article class="clearfix map">
-        <div class="left_part">
+      <article id="contact">
+        <div class="column">
           <h2>Dane firmy</h2>
           <ul>
             <li>PHU Baryłka Jacek Sieradzki</li>
@@ -46,13 +50,12 @@
           <ul>
             <li>ul. Krakowska 36G</li>
             <li>27-600 Sandomierz</li>
-            <li>tel.:(+48) 15 833 54 80</li>
-            <li>fax.:(+48) 15 833 54 81</li>
+            <li>tel.(+48) 15 833 54 80</li>
             <li><strong>Pomoc drogowa 24h</strong></li>
-            <li>tel.:(+48) 533 336 655</li>
+            <li>tel.(+48) 533 336 655</li>
           </ul>
         </div>
-        <div class="center_part">
+        <div class="column">
           <img src="img/mapa.png" alt="mapa Polski z oznaczoną lokalizacją Sandomierza">
           <h2>Godziny pracy</h2>
           <ul>
@@ -60,17 +63,17 @@
             <li>sobota 8:00 - 14:00</li>
           </ul>
         </div>
-        <div class="right_part">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5056.978064394422!2d21.73799!3d50.673747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe573dca4cbff0d1d!2sSolo+Auto+Center!5e0!3m2!1spl!2spl!4v1557084042322!5m2!1spl!2spl" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="column">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5056.978064394422!2d21.73799!3d50.673747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe573dca4cbff0d1d!2sSolo+Auto+Center!5e0!3m2!1spl!2spl!4v1557084042322!5m2!1spl!2spl" height="100%" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </article>
-    </section>
+    </div>
     <footer>
       <ul>
         <li>PHU Baryłka Jacek Sieradzki</li>
         <li>ul. Krakowska 36G</li>
         <li>27-600 Sandomierz</li>
-        <li>tel.:(+48) 15 833 54 80</li>
+        <li>tel.(+48) 15 833 54 80</li>
         <li>Pomoc drogowa 24h: (+48) 533 336 655</li>
       </ul>
     </footer>
